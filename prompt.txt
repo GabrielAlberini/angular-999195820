@@ -1,0 +1,17 @@
+Desarrollo de Landing Page para Luzé – Alfombras Artesanales Objetivo: Crear una landing page para Luzé, un emprendimiento de alfombras artesanales. La página debe incluir información sobre el emprendimiento, una galería de productos con disponibilidad en tiempo real, un proceso de compra claro y un formulario para solicitar alfombras personalizadas.
+
+Requisitos: Sección de presentación:
+
+Breve descripción del emprendimiento. Grid de productos:
+
+Mostrar todas las alfombras disponibles con su estado de stock. Al hacer clic en una alfombra, se abrirá un popup con su información detallada. Detalle de alfombra en el popup:
+
+Debe incluir una imagen, descripción, precio y estado de disponibilidad. Botón "Comprar" que permitirá al usuario contactar con el propietario. Si la compra se confirma, la alfombra deberá marcarse automáticamente como "No disponible" en la UI y en la base de datos. Formulario para encargar alfombra personalizada:
+
+Sección dedicada para que los clientes puedan encargar alfombras a medida. Campos requeridos: Nombre completo Email de contacto Teléfono Dimensiones de la alfombra (largo x ancho) Colores deseados Diseño o referencia (opción para subir una imagen) Comentarios adicionales Contacto:
+
+Incluir un formulario de contacto para que los clientes puedan comunicarse con el propietario. Dashboard de administración (Ruta privada protegida con Firebase):
+
+Autenticación con Firebase para restringir el acceso. Panel de administración dentro del sitio pero oculto en la UI. Funcionalidad para gestionar qué alfombras se muestran en la landing (agregar, editar, eliminar, cambiar disponibilidad). Manipulación de datos con Firebase:
+
+Base de datos en Firebase Firestore para almacenar información de productos y pedidos personalizados. Autenticación con Firebase para proteger el dashboard. Almacenamiento en Firebase Storage para imágenes de alfombras. Credenciales de Firebase:
