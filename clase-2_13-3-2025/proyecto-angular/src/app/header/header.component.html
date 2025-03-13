@@ -1,0 +1,15 @@
+<header>
+  <img src="logo.png" alt="imagen del logo">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      @if(isLoggin) {
+      <li><a href="./characters.html">Characters</a></li>
+      <li>Hola {{name}}</li>
+      <li><button (click)="isLoggin = false">Cerrar sesión</button></li>
+      }@else {
+      <li><button (click)="isLoggin = true">Iniciar sesión</button></li>
+      }
+    </ul>
+  </nav>
+</header>
