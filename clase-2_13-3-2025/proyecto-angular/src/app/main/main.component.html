@@ -1,3 +1,8 @@
 <main class="main-home">
   <p>En esta página vas a encontrar toda la información de Rick and Morty</p>
+  @for(user of items; track user.id) {
+  <!-- <li (click)="saludar(selectedItem = user.id)">{{user.id}}</li> -->
+  <!-- <li (click)="selectedItem = user.id">{{user.id}}</li> -->
+  <app-card [data]="user"></app-card>
+  }
 </main>
